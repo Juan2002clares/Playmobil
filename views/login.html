@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script type="module" src="./login.js"></script>
+</head>
+<body>
+    <form onsubmit="return false">
+        <header>Autenticación de usuarios</header>
+        <label>Usuario: </label>
+        <input type="text" value="sonia.silverado" id="tTxtUsuario" pattern="[a-z]+\.[a-z0-9]+"
+            title="El formato es 'nombre.apellido'" required>
+
+        <label>Contraseña</label>
+        <input type="password" value="s" id="tPasPassword" required
+            title="La contraseña tiene al menos 8 caracteres, mayúsculas, minúsculas y números.">
+
+        <input type="submit" value="Validar usuario" id="tSubmitBtn">
+    </form>
+</body>
+</html>
